@@ -32,6 +32,21 @@ w.pack()
 
 
 ####################  HundredVisions Guy  #################
+def intro():
+    """ initial decision to be made    """
+    # Add some story flair
+    messagebox.showinfo("Welcome", "Beginning of the story")
+    # User must decide
+    choice = simpledialog.askinteger("Choice",
+                                    "Do you choose 1, 2, or 3?")
+    if choice == 1:
+        pass
+    elif choice == 2:
+        pass
+    elif choice == 3:
+        pass
+    else:
+        intro()
 
 
 
@@ -40,3 +55,4 @@ w.pack()
 
 
 ########################   Main Code   #####################
+intro()
