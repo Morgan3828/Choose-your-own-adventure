@@ -1,0 +1,11 @@
+Git hub save commands (In order):
+
+$ git 'filepath'
+
+$ git pull origin master
+
+$ git add .
+
+$ git commit -m "Your Stage message here"
+
+$ git push origin master
