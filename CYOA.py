@@ -14,7 +14,7 @@ root = Tk()
 w = Label(root, text="How many fingers am I holding behind my back ?")
 w.pack()
 
-#########################  Morgan  #########################
+#########################  Morgan?  #########################
 
 
 
