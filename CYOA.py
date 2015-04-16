@@ -11,13 +11,34 @@ import tkinter.messagebox as messagebox
 
 # Create a window
 root = Tk()
-w = Label(root, text="How many fingers am I holding behind my back?")
+w = Label(root, text="Choose your own adventure")
 w.pack()
 
 #########################  Morgan  #########################
+def begin():
+    """First Decision"""
+    # User Info then first choice
+    messagebox.showinfo("Hello!", "This is the beginning of your story!")
+    1stchoice = simpledialog.askinteger("First choice:",
+                                        "Your walking home, and there are 2 paths.",
+                                        "Which do you take?",
+                                        "1 for the shady alley",
+                                        "2 for (TO BE DECIDED)")
+    if 1stchoice == 1:
+        2ndchoiceA()
+    elif 1stchoice == 2:
+        2ndchoiceB()
+    else:
+        begin()
 
-
-
+def 2ndchoiceA():
+    messagebox.showinfo("You chose the Shady Alley way."
+                        ,"In that case this'll be fun.")
+    messagebox.showinfo("You walk down the alley and you see a",
+                        " blue box with a sign on top labeled",
+                        " 'POLICE PUBLIC CALL BOX'.",
+                        "",
+                        "Will you enter the Police box, or
 
 #########################  Jacob  #########################
 
@@ -47,5 +68,7 @@ def intro():
 
 
 
-########################   Main Code   #####################
-intro()
+########################   Main Code 1  #####################
+begin()
+
+
