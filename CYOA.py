@@ -63,7 +63,7 @@ def thirdchoiceA():
     """Third decision"""
     # User Info then third choice
     messagebox.showinfo("Story Explaination",
-                        "You chose to enter"+
+                        "You chose to enter. "+
                         "That's good cause it means your not a wuss.")
     messagebox.showinfo("Story Explaination",
                         "As you open the door your shocked & puzzled "+
@@ -75,8 +75,8 @@ def thirdchoiceA():
 def thirdchoiceAR():
     
     thirdchoice = simpledialog.askinteger("Story Decision",
-                            "1 to "+
-                            ", 2 to :")
+                            "1 to enter the box and take a look at the center"+
+                            ", 2 to walk out:")
     if thirdchoice == 1:
         fourthchoiceA()
         fourthchoiceAR()
