@@ -59,7 +59,32 @@ def secondchoiceAR():
     else:
         secondchoiceAR()
 
-
+def thirdchoiceA():
+    """Third decision"""
+    # User Info then third choice
+    messagebox.showinfo("Story Explaination",
+                        "You chose to enter"+
+                        "That's good cause it means your not a wuss.")
+    messagebox.showinfo("Story Explaination",
+                        "As you open the door your shocked & puzzled "+
+                        "for a moment. You step inside and outside of "+
+                        "the door comparing the inside to the outside "+
+                        "to come to a conclusion and mutter to yourself "+
+                        "'It's Bigger on the Inside!' "+
+                        "Will you enter or go elsewhere?")
+def thirdchoiceAR():
+    
+    thirdchoice = simpledialog.askinteger("Story Decision",
+                            "1 to "+
+                            ", 2 to :")
+    if thirdchoice == 1:
+        fourthchoiceA()
+        fourthchoiceAR()
+    elif thirdchoice == 2:
+        fourthchoiceB()
+        fourthchoiceBR()
+    else:
+        thirdchoiceAR()
 
 #########################  Jacob  #########################
 
@@ -87,6 +112,7 @@ def secondchoiceBR():
         secondchoiceAR()
 # Note for Jacob: the "R" next to the "A & B" are for a restart setting.
 # It's for in the case that the user chooses another number other than 1 or 2
+# It works by an else statement. Just look at my code for an example.
 
 ####################  HundredVisions Guy  #################
 def intro():
@@ -105,7 +131,7 @@ def intro():
     else:
         intro()
 
-########################   Code Start  #####################
+########################  Code Start  #####################
 begin()
 
 
