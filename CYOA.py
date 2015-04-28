@@ -77,6 +77,7 @@ def thirdchoiceAR():
     thirdchoice = simpledialog.askinteger("Story Decision",
                             "1 to enter the box and take a look at the center"+
                             ", 2 to walk out:")
+
     if thirdchoice == 1:
         fourthchoiceA()
         fourthchoiceAR()
@@ -85,6 +86,57 @@ def thirdchoiceAR():
         fourthchoiceBR()
     else:
         thirdchoiceAR()
+
+def thirdchoiceB():
+    """Third decision"""
+    # User Info then third choice
+    messagebox.showinfo("Story Explaination",
+                        "You climb over the box and make your way to the next"+
+                        " sidewalk. When you arrive, you walk to the dry"+
+                        " cleaners as you were sent to pick some clothes for"+
+                        " your mom. There's nobody around. You stumble and"+
+                        " accidentally hit a panel on one of the washers. "+
+                        "When you look up you see a panel, there's a button."+)
+    
+    messagebox.showinfo("Story Explaination",
+                        "Do you press the button out of curiousity, or do you"+
+                        " close the panel and wait for the clothes?")
+def thirdchoiceBR():
+    
+    thirdchoice = simpledialog.askinteger("Story Decision",
+                                          "1 to press the button"+
+                                          ", 2 for NOT pressing the button:")
+    if thirdchoice == 1:
+        fourthchoiceC()
+        fourthchoiceCR()
+    elif thirdchoice == 2:
+        fourthchoiceD()
+        fourthchoiceDR()
+    else:
+        thirdchoiceAR()
+
+def fourthchoiceA():
+    """Fourth decision"""
+    # User Info then third choice
+    messagebox.showinfo("Story Explaination",
+                        "")
+    messagebox.showinfo("Story Explaination",
+                        "")
+def fourthchoiceAR():
+    
+    fourthchoice = simpledialog.askinteger("Story Decision",
+                            "1 "+
+                            ", 2 ")
+
+    if fourthchoice == 1:
+        fifthchoiceA()
+        fifthchoiceAR()
+    elif fourthchoice == 2:
+        fifthchoiceB()
+        fifthchoiceBR()
+    else:
+        fourthchoiceAR()
+
 
 #########################  Jacob  #########################
 
@@ -113,6 +165,7 @@ def secondchoiceBR():
 # Note for Jacob: the "R" next to the "A & B" are for a restart setting.
 # It's for in the case that the user chooses another number other than 1 or 2
 # It works by an else statement. Just look at my code for an example.
+
 
 ####################  HundredVisions Guy  #################
 def intro():
