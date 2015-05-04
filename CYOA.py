@@ -96,7 +96,7 @@ def thirdchoiceB():
                         " cleaners as you were sent to pick some clothes for"+
                         " your mom. There's nobody around. You stumble and"+
                         " accidentally hit a panel on one of the washers. "+
-                        "When you look up you see a panel, there's a button."+)
+                        "When you look up you see a panel, there's a button.")
     
     messagebox.showinfo("Story Explaination",
                         "Do you press the button out of curiousity, or do you"+
@@ -117,16 +117,35 @@ def thirdchoiceBR():
 
 def fourthchoiceA():
     """Fourth decision"""
-    # User Info then third choice
+    # User Info, then Fourth choice
     messagebox.showinfo("Story Explaination",
-                        "")
+                        "You enter the Box.")
     messagebox.showinfo("Story Explaination",
-                        "")
+                        "After walking to the center of this...bigger"+
+                        " on the inside blue box, you notice the center"+
+                        " panel has an astronomical amount of buttons"+
+                        " with very weird looking round symbols on what"+
+                        " to you looks like a computer screen. You go"+
+                        " crazy with them and hit as many buttons as you"+
+                        " can, and as fun as it is, you get nervous after"+
+                        " there's a lot of flashing and the whole place"+
+                        " shakes with the sound of a wheezing groan. For"+
+                        " some reason it seems familiar to you, like"+
+                        " you've seen or heard somewhere before. When"+
+                        " you get tired and everything stops shaking"+
+                        " again, you stand up and walk out the door to"+
+                        " see that your in a plain, but when you look up"+
+                        " shear terror and shock clings to you as you see"+
+                        " a T-rex that's looking right at you now."+
+                        "   Do you run away from the box and make"+
+                        " a break for the trees, or do you dive into the"+
+                        " Box again?")
 def fourthchoiceAR():
     
     fourthchoice = simpledialog.askinteger("Story Decision",
-                            "1 "+
-                            ", 2 ")
+                            "1 to RUN THE HELL AWAY"+
+                            " or, "+
+                            "2 to dive back into the box:")
 
     if fourthchoice == 1:
         fifthchoiceA()
