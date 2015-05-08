@@ -18,7 +18,7 @@ w.pack()
 def begin():
     """First Decision"""
     # User Info then first choice
-    messagebox.showinfo("Hello!", "This is the beginning of YOUR story!")
+    messagebox.showinfo("Hello!", "This is the beginning of your story!")
     firstchoice = simpledialog.askinteger("First choice:",
                                         "Your walking home, and there are 2 paths."+
                                         " Which do you take?"+
@@ -91,16 +91,22 @@ def thirdchoiceB():
     """Third decision"""
     # User Info then third choice
     messagebox.showinfo("Story Explaination",
-                        "You climb over the box and make your way to the next"+
-                        " sidewalk. When you arrive, you walk to the dry"+
-                        " cleaners as you were sent to pick some clothes for"+
-                        " your mom. There's nobody around. You stumble and"+
-                        " accidentally hit a panel on one of the washers. "+
-                        "When you look up you see a panel, there's a button.")
+                        "You climb over the box, because it's faster than"+
+                        " going round the long way, to the next sidewalk."+
+                        " When you jump down, you look up and find the dry"+
+                        " cleaners, because your mom asked you to pick up"+
+                        " her clothes. As you walk in, right away, you"+
+                        " realize that there's nobody around. As you move"+
+                        " you stumble and accidentally hit the panel of"+
+                        " one of the dryers. when you get up to see what"+
+                        " you did, and you see that the panel opened to"+
+                        " reveal a button. It looks very shiny...")
     
     messagebox.showinfo("Story Explaination",
-                        "Do you press the button out of curiousity, or do you"+
-                        " close the panel and wait for the clothes?")
+                        "1 to Press the Button"+
+                        ", or "
+                        "2 to Close the panel and Wait:")
+
 def thirdchoiceBR():
     
     thirdchoice = simpledialog.askinteger("Story Decision",
@@ -145,7 +151,7 @@ def fourthchoiceAR():
     fourthchoice = simpledialog.askinteger("Story Decision",
                             "1 to RUN THE HELL AWAY"+
                             " or, "+
-                            "2 to dive back into the box:")
+                            "2 to Dive back into the box:")
 
     if fourthchoice == 1:
         fifthchoiceA()
@@ -155,6 +161,56 @@ def fourthchoiceAR():
         fifthchoiceBR()
     else:
         fourthchoiceAR()
+
+def fourthchoiceB():
+    """Fourth decision"""
+    # User Info, then Fourth choice
+    messagebox.showinfo("Story Explaination",
+                        "You walk out of the box.")
+    messagebox.showinfo("Story Explaination",
+                        "What do you want to do now?")
+def fourthchoiceBR():
+    
+    fourthchoice = simpledialog.askinteger("Story Decision",
+                            "1 to Book it, and run home"+
+                            " or, "+
+                            "2 to Climb over the box and make your way to"+
+                            " the other sidewalk:")
+
+    if fourthchoice == 1:
+        fifthchoiceA()
+        fifthchoiceAR()
+    elif fourthchoice == 2:
+        fifthchoiceB()
+        fifthchoiceBR()
+    else:
+        fourthchoiceAR()
+
+def fourthchoiceC():
+    """Fourth decision"""
+    # User Info, then Fourth choice 2nd set
+    messagebox.showinfo("Story Explaination",
+                        "You pushed the Button...HA")
+    messagebox.showinfo("Story Explaination",
+                        "When you press the button, the washers fold away to"+
+                        " reveal an elevator.")
+def fourthchoiceCR():
+    
+    fourthchoice = simpledialog.askinteger("Story Decision",
+                            "1 to Take the elevator up"+
+                            " or, "+
+                            "2 to Press the button again, close the panel and"+
+                            " wait:")
+
+    if fourthchoice == 1:
+        fifthchoiceC()
+        fifthchoiceCR()
+    elif fourthchoice == 2:
+        fifthchoiceD()
+        fifthchoiceDR()
+    else:
+        fourthchoiceCR()
+
 
 
 #########################  Jacob  #########################
