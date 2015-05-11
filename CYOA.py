@@ -188,12 +188,12 @@ def fourthchoiceBR():
 
 def fourthchoiceC():
     """Fourth decision"""
-    # User Info, then Fourth choice 2nd set
+    # User Info, then Fourth choice, 2nd set
     messagebox.showinfo("Story Explaination",
                         "You pushed the Button...HA")
     messagebox.showinfo("Story Explaination",
                         "When you press the button, the washers fold away to"+
-                        " reveal an elevator.")
+                        " reveal an elevator. Do you take the elevator?")
 def fourthchoiceCR():
     
     fourthchoice = simpledialog.askinteger("Story Decision",
@@ -210,6 +210,29 @@ def fourthchoiceCR():
         fifthchoiceDR()
     else:
         fourthchoiceCR()
+
+def fourthchoiceD():
+    """Fourth decision"""
+    # User Info, then Fourth choice, 2nd set
+    messagebox.showinfo("Story Explaination",
+                        "")
+    messagebox.showinfo("Story Explaination",
+                        "")
+def fourthchoiceDR():
+    
+    fourthchoice = simpledialog.askinteger("Story Decision",
+                            "1 "+
+                            " or, "+
+                            "2 :")
+
+    if fourthchoice == 1:
+        fifthchoiceD()
+        fifthchoiceDR()
+    elif fourthchoice == 2:
+        fifthchoiceD()
+        fifthchoiceDR()
+    else:
+        fourthchoiceDR()
 
 
 
