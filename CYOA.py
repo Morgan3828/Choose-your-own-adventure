@@ -178,11 +178,11 @@ def fourthchoiceBR():
                             " the other sidewalk:")
 
     if fourthchoice == 1:
-        fifthchoiceA()
-        fifthchoiceAR()
+        fifthchoice()
+        fifthchoiceR()
     elif fourthchoice == 2:
-        fifthchoiceB()
-        fifthchoiceBR()
+        fifthchoice()
+        fifthchoiceR()
     else:
         fourthchoiceAR()
 
@@ -211,28 +211,67 @@ def fourthchoiceCR():
     else:
         fourthchoiceCR()
 
-def fourthchoiceD():
-    """Fourth decision"""
-    # User Info, then Fourth choice, 2nd set
+def fifthchoiceB():
+    """Fifth decision"""
+    # User Info, then Fifth choice
     messagebox.showinfo("Story Explaination",
-                        "")
+                        "As you run in closing the door behind you, you run"+
+                        " back to the buttons again and start mashing them to"+
+                        " leave. After a lot of whirring, and light flashing"+
+                        " everything stops and you open the door. You open it"+
+                        " to see the alleyway with a man looking very angry at"+
+                        " you.")
     messagebox.showinfo("Story Explaination",
-                        "")
-def fourthchoiceDR():
+                        "Do you book it, and run home, or plead to him on your"+
+                        " knees not to hurt him?")
+def fifthchoiceBR():
     
-    fourthchoice = simpledialog.askinteger("Story Decision",
-                            "1 "+
+    fifthchoice = simpledialog.askinteger("Story Decision",
+                            "1 to Plead like your life depends on it"+
                             " or, "+
-                            "2 :")
+                            "2 to BOOK IT:")
 
-    if fourthchoice == 1:
-        fifthchoiceD()
-        fifthchoiceDR()
-    elif fourthchoice == 2:
-        fifthchoiceD()
-        fifthchoiceDR()
+    if fifthchoice == 1:
+        sixthchoiceA()
+        sixthchoiceAR()
+    elif fifthchoice == 2:
+        sixthchoiceB()
+        sixthchoiceBR()
     else:
-        fourthchoiceDR()
+        fifthchoiceBR()
+
+def fifthchoiceA():
+    """Fifth decision"""
+    # User Info, then Fifth choice
+    messagebox.showinfo("Story Explaination",
+                        "You run out into the plain away from the T-rex and"+
+                        " get eaten by running into a velociraptor. (END)")
+    messagebox.showinfo("Story Explaination",
+                        "That's gotta hurt. Try again?")
+    root.destroy
+
+def fifthchoiceC():
+    """Fifth decision"""
+    # User Info, then Fifth choice, 2nd set
+    messagebox.showinfo("Story Explaination",
+                        "You book it, and run home, to be panting in your"+
+                        " kitchen. You dash to your room. (END)")
+    messagebox.showinfo("Story Explaination",
+                        "WOW. Your boring. You definitely get to try again."+
+                        " Seriously. You got scared and ran away. TRY AGAIN."+
+                        " NOW.")
+    root.destroy
+
+def fifthchoiceD():
+    """Fifth decision"""
+    # User Info, then Fifth choice
+    messagebox.showinfo("Story Explaination",
+                        "You close the panel, wait for the employee to return,"+
+                        " grab the clothes and walk home. (END)")
+    messagebox.showinfo("Story Explaination",
+                        "I hope your happy, cause your really boring."+
+                        " TRY AGAIN.")
+    root.destroy
 
 
 
