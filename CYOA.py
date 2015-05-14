@@ -203,8 +203,8 @@ def fourthchoiceCR():
                             " wait:")
 
     if fourthchoice == 1:
-        fifthchoiceC()
-        fifthchoiceCR()
+        fifthchoiceE()
+        fifthchoiceER()
     elif fourthchoice == 2:
         fifthchoiceD()
         fifthchoiceDR()
@@ -272,6 +272,29 @@ def fifthchoiceD():
                         "I hope your happy, cause your really boring."+
                         " TRY AGAIN.")
     root.destroy
+
+def fifthchoiceE():
+    """Fifth decision"""
+    # User Info, then Fifth choice
+    messagebox.showinfo("Story Explaination",
+                        "ISIS text")
+    messagebox.showinfo("Story Explaination",
+                        "")
+def fifthchoiceER():
+    
+    fifthchoice = simpledialog.askinteger("Story Decision",
+                            "1 to "+
+                            " or, "+
+                            "2 :")
+
+    if fifthchoice == 1:
+        sixthchoice()
+        sixthchoiceR()
+    elif fifthchoice == 2:
+        sixthchoice()
+        sixthchoiceR()
+    else:
+        fifthchoiceER()
 
 
 
