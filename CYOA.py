@@ -248,7 +248,6 @@ def fifthchoiceA():
                         " get eaten by running into a velociraptor. (END)")
     messagebox.showinfo("Story Explaination",
                         "That's gotta hurt. Try again?")
-    root.destroy
 
 def fifthchoiceC():
     """Fifth decision"""
@@ -260,7 +259,6 @@ def fifthchoiceC():
                         "WOW. Your boring. You definitely get to try again."+
                         " Seriously. You got scared and ran away. TRY AGAIN."+
                         " NOW.")
-    root.destroy
 
 def fifthchoiceD():
     """Fifth decision"""
@@ -271,7 +269,6 @@ def fifthchoiceD():
     messagebox.showinfo("Story Explaination",
                         "I hope your happy, cause your really boring."+
                         " TRY AGAIN.")
-    root.destroy
 
 def fifthchoiceE():
     """Fifth decision"""
@@ -347,4 +344,5 @@ def intro():
 ########################  Code Start  #####################
 begin()
 
+root.destroy()
 
